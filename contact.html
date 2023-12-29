@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Diary</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav>ul{
+            background-color: #31316a;
+            text-align: center;
+            padding: 16px;
+        }
+        li{
+            display: inline;
+            padding: 16px;
+            font-size: 24px;
+        }
+        li>a{
+            text-decoration: underline;
+            color:white;
+        }
+
+        #backgroundImage{
+            height: 450px;
+            width:100%;
+        }
+        #contactSection{
+            text-align: center;
+            padding: 20px;
+        }
+        main{
+            background-color: #ece9ec;
+        }
+        .contactDiv{
+            width: 450px;
+            margin: auto;
+            background-color: white;
+            margin-top:30px;
+            border:1px solid #a78d8d 
+        }
+        form{
+            padding: 16px;
+            margin:30px 0px;
+            text-align: center;
+
+        }
+        .inputBox{
+            width: 100%;
+            border:none;
+            border-bottom:1px solid #a78d8d ;
+            margin:10px 0px;
+            padding-bottom: 5px;
+            height: 30px;
+        }
+
+        #submitButton{
+            background-color: #31316a;
+            color: #ece9ec;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            height: 110px;
+            position:sticky;
+            bottom: 0px;
+            text-align: center;
+        }
+        footer > p{
+            font-size: 20px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">TRIPS</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contactSection">
+            <h2>Wanna come on my next trip? Contact me</h2>
+            <div class="contactDiv">
+                <form action="" method="post">
+                    <input class="inputBox" type="text" name="fullname" id="name" placeholder="Full Name">
+                    <input class="inputBox"  type="email" name="Email" id="email" placeholder="Email">
+                    <input class="inputBox"  type="tel" id="contact" name="contact" pattern="[+]{1}[0-9]{11,14}" required placeholder="Contact Number">
+                    <input id="submitButton" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+          <p>Copyright @TravelDiary.com</p>
+    </footer>
+</body>
+</html>
